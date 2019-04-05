@@ -1,0 +1,35 @@
+<template>
+  <div>
+    <Header/>
+    <Charlas/>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import Charlas from '@/components/Charlas.vue'
+import Header from '@/components/Header.vue'
+
+export default {
+  name: 'home',
+  components: {
+    Charlas,
+    Header
+  }
+}
+</script>
+
+<style>
+/* remove default margin */
+body {
+  margin: 0px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Raleway';
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+</style>
