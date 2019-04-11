@@ -14,14 +14,11 @@ export default {
 
 <style>
 .header__search {
-  margin: auto;
-  margin-right: 10px;
   height: 38px;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   max-width: 700px;
-  min-width: 300px;
+  min-width: 200px;
   height: 40px;
 }
 
@@ -32,6 +29,7 @@ export default {
   border-radius: 4px;
   width: 100%;
   max-width: 800px;
+  min-width: 200px;
   outline: none;
   font-family: 'Raleway';
   font-size: 14px;
