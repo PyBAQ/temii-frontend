@@ -32,18 +32,17 @@ export default {
 .header {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   min-height: 80px;
   padding-bottom: 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  margin: 0px;
 }
 
 .header__logo {
   font-family: 'Pacifico';
   font-size: 48px;
   color: #00a7e1;
-  margin-left: 16px;
   display: inline-block;
 }
 
