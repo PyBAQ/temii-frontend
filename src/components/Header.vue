@@ -44,7 +44,10 @@ export default {
 
 .header {
   display: flex;
-  height: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 80px;
+  padding: 10px 0;
   border-bottom: 1px solid #e5e5e5;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   margin: 0px;
@@ -58,16 +61,6 @@ export default {
   display: inline-block;
 }
 
-.header__search {
-  margin: auto;
-  margin-left: 74px;
-  height: 38px;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-}
-
 .icon {
   position: relative;
   top: 50%;
@@ -76,24 +69,6 @@ export default {
   color: #00a7e1;
   margin-top: -9px;
   font-size: 20px;
-}
-
-.input-field {
-  text-indent: 40px;
-  border: 0.75px solid #a0bec8;
-  background: #f8f8f8;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 800px;
-  outline: none;
-  font-family: 'Raleway';
-  font-size: 14px;
-}
-
-.input-field:hover,
-.input-field:focus {
-  background: white;
-  border: 0.75px solid rgb(0, 121, 211);
 }
 
 /* Subheader */
