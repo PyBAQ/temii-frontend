@@ -14,11 +14,15 @@ export default {
 
 <style>
 .subheader__list {
-  display: flex;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .subheader__item {
-  padding: 10px 14px 0px 17px;
+  padding: 10px;
+  padding-bottom: 0;
   text-align: center;
   box-sizing: border-box;
   list-style-type: none;
