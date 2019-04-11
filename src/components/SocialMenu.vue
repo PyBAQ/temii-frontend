@@ -1,16 +1,24 @@
 <template>
   <ul class="subheader__social">
     <li>
-      <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/pybaq/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
     </li>
     <li>
-      <i class="fab fa-twitter-square"></i>
+      <a href="http://twitter.com/pybaq" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
     </li>
     <li>
-      <i class="fab fa-facebook-square"></i>
+      <a href="https://www.facebook.com/pybaq/" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
     </li>
     <li>
-      <i class="fab fa-meetup"></i>
+      <a href="https://www.meetup.com/pythonbaq/" target="_blank">
+        <i class="fab fa-meetup"></i>
+      </a>
     </li>
   </ul>
 </template>
@@ -32,5 +40,10 @@ export default {
   font-size: 32px;
   color: #00a7e1;
   padding: 8px;
+}
+
+.subheader__social > li a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
