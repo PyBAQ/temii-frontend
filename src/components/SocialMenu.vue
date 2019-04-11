@@ -24,13 +24,13 @@ export default {
 <style>
 .subheader__social {
   display: flex;
-  margin-right: 30px;
+  margin-top: 8px;
 }
 
 .subheader__social > li {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 32px;
   color: #00a7e1;
-  padding: 5px;
+  padding: 8px;
 }
 </style>

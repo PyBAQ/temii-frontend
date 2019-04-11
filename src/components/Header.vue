@@ -64,7 +64,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 38px;
-  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
 }
