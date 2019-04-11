@@ -5,36 +5,23 @@
       <SearchInput />
     </div>
     <div class="subheader">
-      <ul class="subheader__list">
-        <li class="subheader__item subheader__item--active">Inicio</li>
-        <li class="subheader__item">Agendados</li>
-        <li class="subheader__item">Finalizadas</li>
-      </ul>
-      <ul class="subheader__social">
-        <li>
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li>
-          <i class="fab fa-twitter-square"></i>
-        </li>
-        <li>
-          <i class="fab fa-facebook-square"></i>
-        </li>
-        <li>
-          <i class="fab fa-meetup"></i>
-        </li>
-      </ul>
+      <Menu />
+      <SocialMenu />
     </div>
   </nav>
 </template>
 
 <script>
 import SearchInput from './SearchInput';
+import Menu from './Menu';
+import SocialMenu from './SocialMenu';
 
 export default {
   name: 'Header',
   components: {
     SearchInput,
+    Menu,
+    SocialMenu,
   }
 }
 </script>
@@ -81,36 +68,5 @@ export default {
   flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
-}
-
-.subheader__list {
-  display: flex;
-}
-
-.subheader__item {
-  padding: 10px 14px 0px 17px;
-  text-align: center;
-  box-sizing: border-box;
-  list-style-type: none;
-  font-size: 14px;
-  color: #4d646d;
-}
-
-.subheader__item--active {
-  border-bottom: 2px solid #00a7e1;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-  color: #000000;
-}
-
-.subheader__social {
-  display: flex;
-  margin-right: 30px;
-}
-
-.subheader__social > li {
-  list-style-type: none;
-  font-size: 25px;
-  color: #00a7e1;
-  padding: 5px;
 }
 </style>
