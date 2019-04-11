@@ -2,10 +2,7 @@
   <nav>
     <div class="header">
       <div class="header__logo">Temii</div>
-      <div class="header__search">
-        <i class="fa fa-search icon"></i>
-        <input class="input-field" type="text" placeholder="Buscar charlas en Temii" name="usrnm">
-      </div>
+      <SearchInput />
     </div>
     <div class="subheader">
       <ul class="subheader__list">
@@ -32,8 +29,13 @@
 </template>
 
 <script>
+import SearchInput from './SearchInput';
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: {
+    SearchInput,
+  }
 }
 </script>
 
@@ -81,7 +83,8 @@ export default {
   border: 0.75px solid #a0bec8;
   background: #f8f8f8;
   border-radius: 4px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   outline: none;
   font-family: 'Raleway';
   font-size: 14px;
@@ -100,6 +103,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 38px;
+  flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
 }
