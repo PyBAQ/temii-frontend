@@ -63,9 +63,14 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 38px;
   flex-direction: column;
-  border-bottom: 1px solid #e5e5e5;
   margin: 0px;
+}
+
+@media (min-width: 767px) {
+  .subheader {
+    flex-direction: row;
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 </style>

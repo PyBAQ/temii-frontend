@@ -15,14 +15,14 @@ export default {
 <style>
 .subheader__list {
   width: 100%;
-  height: 100%;
+  max-width: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
 .subheader__item {
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 13px;
   text-align: center;
   box-sizing: border-box;
   list-style-type: none;
@@ -32,8 +32,14 @@ export default {
 
 .subheader__item--active {
   border-bottom: 2px solid #00a7e1;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25); */
   color: #000000;
+}
+
+@media (min-width: 767px) {
+  .subheader__list {
+    box-shadow: none;
+  }
 }
 </style>
 
