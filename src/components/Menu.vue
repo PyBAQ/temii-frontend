@@ -15,7 +15,6 @@ export default {
 <style>
 .subheader__list {
   width: 100%;
-  max-width: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -38,6 +37,7 @@ export default {
 
 @media (min-width: 767px) {
   .subheader__list {
+    width: 400px;
     box-shadow: none;
   }
 }

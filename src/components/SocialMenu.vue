@@ -50,6 +50,7 @@ export default {
 @media (min-width: 767px) {
   .subheader__social {
     margin-top: 0;
+    margin-right: 16px;
   }
 }
 </style>
