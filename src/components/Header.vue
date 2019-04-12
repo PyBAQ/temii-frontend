@@ -13,8 +13,16 @@
         <li class="subheader__item">Agendados</li>
         <li class="subheader__item">Finalizadas</li>
       </ul>
-      <ul class="subheader__social">
-        <li>
+      <div class="subheader__social">
+        <div v-for="icon in icons">
+          <a :href="icon.url">
+            <div class="social-btn">
+              <i :class="icon.name"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- <li>
           <i class="fab fa-instagram"></i>
         </li>
         <li>
@@ -25,15 +33,28 @@
         </li>
         <li>
           <i class="fab fa-meetup"></i>
-        </li>
-      </ul>
+        </li>-->
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return {
+      icons: [
+        { name: 'fab fa-instagram', url: 'https://www.instagram.com/pybaq/' },
+        { name: 'fab fa-twitter-square', url: 'https://twitter.com/pybaq' },
+        {
+          name: 'fab fa-facebook-square',
+          url: 'https://www.facebook.com/pybaq'
+        },
+        { name: 'fab fa-meetup', url: 'https://www.meetup.com/pythonbaq' }
+      ]
+    }
+  }
 }
 </script>
 
@@ -128,8 +149,7 @@ export default {
   margin-right: 30px;
 }
 
-.subheader__social > li {
-  list-style-type: none;
+.social-btn {
   font-size: 25px;
   color: #00a7e1;
   padding: 5px;
