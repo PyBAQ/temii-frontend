@@ -47,16 +47,6 @@ export default {
   display: inline-block;
 }
 
-.icon {
-  position: relative;
-  top: 50%;
-  left: 30px;
-  height: 18px;
-  color: #00a7e1;
-  margin-top: -9px;
-  font-size: 20px;
-}
-
 /* Subheader */
 
 .subheader {
