@@ -58,6 +58,16 @@ export default {
 }
 
 @media (min-width: 767px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .header__logo {
+    margin-left: 24px;
+  }
+
   .subheader {
     flex-direction: row;
     border-bottom: 1px solid #e5e5e5;

@@ -67,4 +67,10 @@ export default {
   color: #00a7e1;
   font-size: 20px;
 }
+
+@media (min-width: 767px) {
+  .header__search {
+    margin: 0 24px;
+  }
+}
 </style>
