@@ -26,6 +26,7 @@ export default {
   min-width: 200px;
   height: 40px;
 }
+
 .input-field {
   display: inline-flex;
   width: calc(100% - 72.75px);
@@ -35,6 +36,7 @@ export default {
   border-radius: 4px;
   padding-left: 72px;
 }
+
 .input-field input {
   border: none;
   background-color: transparent;
@@ -43,11 +45,13 @@ export default {
   font-size: 14px;
   width: 100%;
 }
+
 .input-field:hover,
 .input-field:focus {
   background: white;
   border: 0.75px solid rgb(0, 121, 211);
 }
+
 .icon-container {
   position: absolute;
   height: 38px;
@@ -57,14 +61,17 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .icon {
   height: 18px;
   color: #00a7e1;
   font-size: 20px;
 }
+
 @media (min-width: 767px) {
   .header__search {
     margin: 0 24px;
   }
 }
+
 </style>

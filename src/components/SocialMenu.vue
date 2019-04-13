@@ -34,16 +34,19 @@ export default {
   margin-top: 8px;
   display: flex;
 }
+
 .subheader__social > li {
   list-style-type: none;
   font-size: 32px;
   color: #00a7e1;
   padding: 0 8px;
 }
+
 .subheader__social > li a {
   color: inherit;
   text-decoration: none;
 }
+
 @media (min-width: 767px) {
   .subheader__social {
     margin-top: 0;
