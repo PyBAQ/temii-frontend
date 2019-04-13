@@ -35,7 +35,7 @@ export default {
           fecha_publicacion: '27/03/2019',
           usuario: 'Rafael Villareal',
           votos: '20',
-          imgUrl: require('../assets/pentesting.png'),
+          imgUrl: 'https://imgur.com/veyASfn.png',
           upvoted: false
         },
         {
@@ -43,7 +43,7 @@ export default {
           fecha_publicacion: '27/03/2019',
           usuario: 'Rafael Villareal',
           votos: '20',
-          imgUrl: require('../assets/bigdata.png'),
+          imgUrl: 'https://imgur.com/o96FbDB.png',
           upvoted: false
         },
         {
@@ -51,7 +51,7 @@ export default {
           fecha_publicacion: '27/03/2019',
           usuario: 'Rafael Villareal',
           votos: '20',
-          imgUrl: require('../assets/docker.png'),
+          imgUrl: 'https://imgur.com/819GxJm.png',
           upvoted: false
         },
         {
@@ -59,7 +59,7 @@ export default {
           fecha_publicacion: '27/03/2019',
           usuario: 'Rafael Villareal',
           votos: '20',
-          imgUrl: require('../assets/pasarela.png'),
+          imgUrl: 'https://imgur.com/u9iSLfM.png',
           upvoted: false
         },
         {
@@ -67,7 +67,7 @@ export default {
           fecha_publicacion: '27/03/2019',
           usuario: 'Rafael Villareal',
           votos: '20',
-          imgUrl: require('../assets/graphql.png'),
+          imgUrl: 'https://imgur.com/40lBxyW.png',
           upvoted: false
         }
       ]
