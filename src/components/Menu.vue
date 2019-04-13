@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Menu',
+  name: 'Menu'
 }
 </script>
 
@@ -41,5 +41,5 @@ export default {
     box-shadow: none;
   }
 }
-</style>
 
+</style>

@@ -2,33 +2,32 @@
   <nav>
     <div class="header">
       <div class="header__logo">Temii</div>
-      <SearchInput />
+      <SearchInput/>
     </div>
     <div class="subheader">
-      <Menu />
-      <SocialMenu />
+      <Menu/>
+      <SocialMenu/>
     </div>
   </nav>
 </template>
 
 <script>
-import SearchInput from './SearchInput';
-import Menu from './Menu';
-import SocialMenu from './SocialMenu';
+import SearchInput from './SearchInput'
+import Menu from './Menu'
+import SocialMenu from './SocialMenu'
 
 export default {
   name: 'Header',
   components: {
     SearchInput,
     Menu,
-    SocialMenu,
+    SocialMenu
   }
 }
 </script>
 
 <style>
 /* header */
-
 .header {
   display: flex;
   justify-content: center;
@@ -38,7 +37,6 @@ export default {
   padding-bottom: 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-
 .header__logo {
   font-family: 'Pacifico';
   font-size: 48px;
@@ -47,7 +45,6 @@ export default {
 }
 
 /* Subheader */
-
 .subheader {
   display: flex;
   justify-content: space-between;

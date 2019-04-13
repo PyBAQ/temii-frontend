@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header/>
-    <Charlas/>
+    <div class="container">
+      <Charlas/>
+    </div>
   </div>
 </template>
 
@@ -31,5 +33,9 @@ body {
 ul {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  margin: 15px 150px 15px 150px;
 }
 </style>
