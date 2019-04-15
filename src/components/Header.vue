@@ -15,10 +15,6 @@
 import SearchInput from './SearchInput'
 import Menu from './Menu'
 import SocialMenu from './SocialMenu'
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 export default {
   name: 'Header',
   components: {
@@ -46,10 +42,6 @@ export default {
   color: #00a7e1;
   display: inline-block;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 /* Subheader */
 .subheader {
   display: flex;
@@ -58,27 +50,18 @@ export default {
   flex-direction: column;
   margin: 0px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 @media (min-width: 767px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 0;
   }
-<<<<<<< HEAD
-  .header__logo {
-    margin-left: 24px;
-  }
-=======
 
   .header__logo {
     margin-left: 24px;
   }
 
->>>>>>> upstream/master
   .subheader {
     flex-direction: row;
     border-bottom: 1px solid #e5e5e5;
