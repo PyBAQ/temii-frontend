@@ -39,9 +39,17 @@ ul {
 }
 
 .container {
-  margin: 15px 150px 15px 150px;
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  margin: 15px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
 }
 </style>
