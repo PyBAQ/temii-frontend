@@ -2,7 +2,7 @@
   <div>
     <Header/>
     <div class="container">
-      <Charlas/>
+      <SpeachList/>
       <Sidebar/>
     </div>
   </div>
@@ -10,14 +10,14 @@
 
 <script>
 // @ is an alias to /src
-import Charlas from '@/components/Charlas.vue'
+import SpeachList from '@/components/SpeachList.vue'
 import Header from '@/components/Header.vue'
 import Sidebar from '@/components/Sidebar.vue'
 
 export default {
   name: 'home',
   components: {
-    Charlas,
+    SpeachList,
     Header,
     Sidebar
   }
