@@ -26,8 +26,8 @@
             <BaseTextarea v-model="tema.descripcion" id="descripcion"/>
           </div>
           <div>
-            <label for="etiquetas">Etiquetas</label>
-            <BaseInput v-model="tema.etiquetas" id="etiquetas"/>
+            <label for="requisitos">Requisitos</label>
+            <BaseTextarea v-model="tema.requisitos" id="requisitos"/>
           </div>
         </form>
       </div>
@@ -58,7 +58,7 @@ export default {
       tema: {
         titulo: '',
         descripcion: '',
-        etiquetas: ''
+        requisitos: ''
       }
     }
   },
