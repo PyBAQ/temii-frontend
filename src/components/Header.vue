@@ -15,7 +15,6 @@
 import SearchInput from './SearchInput'
 import Menu from './Menu'
 import SocialMenu from './SocialMenu'
-
 export default {
   name: 'Header',
   components: {
@@ -43,7 +42,6 @@ export default {
   color: #00a7e1;
   display: inline-block;
 }
-
 /* Subheader */
 .subheader {
   display: flex;
