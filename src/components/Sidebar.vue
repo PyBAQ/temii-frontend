@@ -82,9 +82,9 @@ export default {
   box-sizing: border-box;
   height: 427px;
   width: 271px;
+  margin: 0 auto;
   border: 1px solid #a0bec8;
   border-radius: 10px;
-  margin-left: 15px;
 }
 
 .sidebar-content {

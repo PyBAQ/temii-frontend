@@ -42,9 +42,8 @@ ul {
   width: calc(100% - 32px);
   max-width: 1200px;
   margin: 15px auto;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 1200px) {

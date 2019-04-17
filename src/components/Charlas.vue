@@ -1,25 +1,23 @@
 <template>
-  <div>
-    <div class="charlasContainer">
-      <div class="charlaBox" v-for="(charla, index) in charlas" :key="index">
-        <div class="charlaIcon">
-          <i
-            v-if="charla.upvoted"
-            @click="charla.upvoted = !charla.upvoted"
-            class="fas fa-heart fa-2x"
-          ></i>
-          <i v-else @click="charla.upvoted = !charla.upvoted" class="far fa-heart fa-2x"></i>
-          <div class="charlaIcon__votes">{{ charla.votos }} votos</div>
+  <div class="charlasContainer">
+    <div class="charlaBox" v-for="(charla, index) in charlas" :key="index">
+      <div class="charlaIcon">
+        <i
+          v-if="charla.upvoted"
+          @click="charla.upvoted = !charla.upvoted"
+          class="fas fa-heart fa-2x"
+        ></i>
+        <i v-else @click="charla.upvoted = !charla.upvoted" class="far fa-heart fa-2x"></i>
+        <div class="charlaIcon__votes">{{ charla.votos }} votos</div>
+      </div>
+      <div class="charlaImg">
+        <div class="charlaImg__box">
+          <img :src="charla.imgUrl" width="115" height="115" alt>
         </div>
-        <div class="charlaImg">
-          <div class="charlaImg__box">
-            <img :src="charla.imgUrl" width="115" height="115" alt>
-          </div>
-        </div>
-        <div class="charlaMeta">
-          <div class="charlaMeta__title">{{ charla.titulo }}</div>
-          <div class="charlaMeta__author">{{ charla.usuario }} - {{ charla.fecha_publicacion}}</div>
-        </div>
+      </div>
+      <div class="charlaMeta">
+        <div class="charlaMeta__title">{{ charla.titulo }}</div>
+        <div class="charlaMeta__author">{{ charla.usuario }} - {{ charla.fecha_publicacion}}</div>
       </div>
     </div>
   </div>
@@ -85,6 +83,7 @@ export default {
 
 <style>
 .charlasContainer {
+  grid-row: 1 / span 1;
   display: flex;
   flex-direction: column;
 }
