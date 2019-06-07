@@ -3,6 +3,7 @@
     <Header/>
     <div class="container">
       <Charlas/>
+      <Sidebar/>
     </div>
   </div>
 </template>
@@ -11,12 +12,14 @@
 // @ is an alias to /src
 import Charlas from '@/components/Charlas.vue'
 import Header from '@/components/Header.vue'
+import Sidebar from '@/components/Sidebar.vue'
 
 export default {
   name: 'home',
   components: {
     Charlas,
-    Header
+    Header,
+    Sidebar
   }
 }
 </script>
@@ -37,5 +40,8 @@ ul {
 
 .container {
   margin: 15px 150px 15px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 </style>
