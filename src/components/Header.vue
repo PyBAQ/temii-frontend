@@ -3,6 +3,7 @@
     <div class="header">
       <div class="header__logo">Temii</div>
       <SearchInput/>
+      <UserMenu/>
     </div>
     <div class="subheader">
       <Menu/>
@@ -15,12 +16,14 @@
 import SearchInput from './SearchInput'
 import Menu from './Menu'
 import SocialMenu from './SocialMenu'
+import UserMenu from './UserMenu'
 export default {
   name: 'Header',
   components: {
     SearchInput,
     Menu,
-    SocialMenu
+    SocialMenu,
+    UserMenu
   }
 }
 </script>
