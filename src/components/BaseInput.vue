@@ -1,15 +1,23 @@
 <template>
-  <input type="text" :value="value" @input="$emit('input', $event.target.value)">
+  <input :type="type" :value="value" @input="$emit('input', $event.target.value)">
 </template>
 
 <script>
 export default {
   name: 'BaseInput',
-  props: ['value']
+  props: {
+    value: String,
+    type: {
+      type: String,
+      default: 'text'
+    }
+  }
 }
 </script>
 <style scoped>
-input[type='text'] {
+input[type='text'],
+input[type='password'],
+input[type='email'] {
   height: 38px;
   width: 500px;
   font-size: 14px;

@@ -8,7 +8,6 @@
     </div>
     <BaseButton type="info" id="show-modal" @click.native="showModal = true">Postular Tema</BaseButton>
     <!-- use the modal component, pass in the prop -->
-    <!-- <modal v-if="showModal" @keydown.esc="showModal = false"> -->
     <modal :show="showModal" @close="showModal = false">
       <!--
         you can use custom content here to overwrite
@@ -16,16 +15,16 @@
       -->
       <h3 slot="header">POSTULAR UN TEMA</h3>
       <div slot="body">
-        <form @submit.prevent="formSubmit()" ref="myForm">
-          <div>
+        <form ref="myForm">
+          <div class="form-control">
             <label for="titulo">Titulo</label>
             <BaseInput v-model="tema.titulo" id="titulo"/>
           </div>
-          <div>
+          <div class="form-control">
             <label for="descripcion">Descripcion</label>
             <BaseTextarea v-model="tema.descripcion" id="descripcion"/>
           </div>
-          <div>
+          <div class="form-control">
             <label for="requisitos">Requisitos</label>
             <BaseTextarea v-model="tema.requisitos" id="requisitos"/>
           </div>
@@ -33,7 +32,7 @@
       </div>
       <div slot="footer">
         <!-- <button type="submit">Submit</button> -->
-        <BaseButton @click.native="test()" type="info">Postular</BaseButton>
+        <BaseButton @click.native="postular()" type="info">Postular</BaseButton>
       </div>
     </modal>
   </div>
@@ -43,7 +42,7 @@
 import BaseButton from './BaseButton.vue'
 import BaseInput from './BaseInput.vue'
 import BaseTextarea from './BaseTextarea.vue'
-import modal from './PostularTema.vue'
+import modal from './BaseModal.vue'
 export default {
   name: 'Sidebar',
   components: {
@@ -63,7 +62,7 @@ export default {
     }
   },
   methods: {
-    test() {
+    postular() {
       this.showModal = false
       console.log(this.tema)
       this.$refs.myForm.reset()
