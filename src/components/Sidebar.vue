@@ -2,7 +2,7 @@
   <div class="sidebar">
     <div class="sidebar-title">Temii</div>
     <div class="sidebar-content">
-      Temii es una aplicación para ayudar a la comunidad de Python Barranquilla a generar temas para su meetup.
+      Temii es una aplicación para ayudar a la comunidad de <a href="https://pybaq.co" target="_blank">Python Barranquilla</a> a generar temas para su meetup.
       <br>
       <br>Registrate y vota tu tema favorito. O si te gustaria un tema diferente postula tu tema aqui:
     </div>
@@ -78,7 +78,7 @@ export default {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 15px;
   border: 1px solid #a0bec8;
   border-radius: 10px;
@@ -104,5 +104,12 @@ export default {
 
 form {
   margin-bottom: 2.5rem;
+}
+
+@media (min-width: 400px) {
+  .sidebar-content {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
 }
 </style>
