@@ -79,4 +79,11 @@ export default {
   flex-direction: column;
   width: 100%
 }
+
+@media (min-width: 900px) {
+  .container {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+}
 </style>

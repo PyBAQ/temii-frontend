@@ -78,6 +78,7 @@ export default {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  max-width: 700px;
   margin: 15px auto;
   padding: 15px;
   border: 1px solid #a0bec8;
@@ -110,6 +111,12 @@ form {
   .sidebar-content {
     font-size: 18px;
     line-height: 1.2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .sidebar {
+    height: fit-content;
   }
 }
 </style>

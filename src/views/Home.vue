@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style>
-/* remove default margin */
 body {
   margin: 0px;
   line-height: 1.6;
@@ -40,9 +39,16 @@ ul {
 
 .container {
   width: calc(100% - 32px);
-  max-width: 1200px;
+  max-width: 1024px;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .main-home-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
 }
 </style>
