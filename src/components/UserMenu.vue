@@ -100,6 +100,8 @@ export default {
   display: flex;
   align-content: space-between;
   justify-content: center;
+  margin-top: 24px;
+  min-width: 290px;
 }
 
 .user-container > button {
@@ -108,5 +110,11 @@ export default {
 
 .form-control {
   margin-bottom: 15px;
+}
+
+@media (min-width: 767px) {
+  .user-container {
+    margin-top: 0;
+  }
 }
 </style>

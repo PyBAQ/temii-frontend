@@ -22,13 +22,11 @@ export default {
   position: relative;
   height: 38px;
   width: calc(100% - 32px);
-  max-width: 700px;
-  min-width: 200px;
   height: 40px;
 }
 .input-field {
   display: inline-flex;
-  width: calc(100% - 72.75px);
+  width: 100%;
   height: 38px;
   border: 0.75px solid #a0bec8;
   background: #f8f8f8;
@@ -64,7 +62,15 @@ export default {
 }
 @media (min-width: 767px) {
   .header__search {
-    margin: 0 24px;
+    margin-left: 24px;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__search {
+    margin-left: 0;
   }
 }
 </style>
