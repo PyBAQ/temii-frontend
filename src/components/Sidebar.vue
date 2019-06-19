@@ -73,27 +73,25 @@ export default {
 
 <style>
 .sidebar {
-  /* display: inline-flex;
-  width: calc(100% - 72.75px); */
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  height: 427px;
-  width: 271px;
+  width: 100%;
   margin: 0 auto;
+  padding: 15px;
   border: 1px solid #a0bec8;
   border-radius: 10px;
 }
 
 .sidebar-content {
-  margin: 0px 25px 18px 30px;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
+  margin-bottom: 15px;
 }
 
 .sidebar-title {

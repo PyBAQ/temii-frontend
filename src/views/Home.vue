@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <div class="container">
+    <div class="container main-home-container">
       <SpeachList/>
       <Sidebar/>
     </div>
@@ -41,14 +41,8 @@ ul {
 .container {
   width: calc(100% - 32px);
   max-width: 1200px;
-  margin: 15px auto;
   display: grid;
   grid-template-columns: 1fr;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    flex-direction: row;
-  }
+  margin: 0 auto;
 }
 </style>
