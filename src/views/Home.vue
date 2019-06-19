@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <div class="container">
+    <div class="container main-home-container">
       <SpeachList/>
       <Sidebar/>
     </div>
@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style>
-/* remove default margin */
 body {
   margin: 0px;
   line-height: 1.6;
@@ -38,17 +37,27 @@ ul {
   padding: 0;
 }
 
-.container {
-  width: calc(100% - 32px);
-  max-width: 1200px;
-  margin: 15px auto;
+.main-home-container {
+  max-width: 1024px;
   display: grid;
   grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 0 10px 30px 10px;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    flex-direction: row;
+@media (min-width: 900px) {
+  .main-home-container {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-gap: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-home-container {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-gap: 16px;
   }
 }
 </style>

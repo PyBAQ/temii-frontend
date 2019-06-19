@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <SingleSpeachCard v-for="speach in speaches" :key="speach.id" :speach="speach" />
+    <SingleSpeachCard v-for="speach in speaches" :key="speach.id" :speach="speach" />
   </div>
 </template>
 
@@ -75,8 +75,30 @@ export default {
 <style scoped>
 .container {
   grid-row: 2 / span 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
 }
 </style>
