@@ -88,10 +88,11 @@ export default {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 1.3em;
   letter-spacing: 0.05em;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .sidebar-title {
