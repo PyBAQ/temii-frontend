@@ -47,7 +47,7 @@ ul {
 
 @media (min-width: 900px) {
   .main-home-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 300px;
     grid-gap: 16px;
   }
 }
