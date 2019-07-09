@@ -2,11 +2,11 @@
   <nav>
     <div class="header">
       <div class="header__logo">Temii</div>
-      <SearchInput/>
+      <SearchInput />
     </div>
     <div class="subheader">
-      <Menu/>
-      <SocialMenu/>
+      <Menu />
+      <SocialMenu />
     </div>
   </nav>
 </template>
