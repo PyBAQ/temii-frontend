@@ -32,10 +32,10 @@ export default {
 <style>
 .speachBox {
   margin: 5px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 5px;
   width: 100%;
   max-width: 850px;
   height: 140px;
@@ -56,19 +56,18 @@ export default {
 .speachIcon {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   grid-area: votes;
 }
 
 .speachIcon i {
   font-size: 24px;
-  padding: 4px;
 }
 
 .speachIcon__votes {
   color: #a0bec8;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .speachImg {
