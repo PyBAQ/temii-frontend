@@ -31,7 +31,6 @@ export default {
 
 <style>
 .speachBox {
-  margin: 5px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -101,4 +100,6 @@ export default {
 .fa-heart {
   color: #00a7e1;
 }
+
+
 </style>

@@ -81,7 +81,6 @@ export default {
   max-width: 700px;
   margin: 15px auto;
   padding: 15px;
-  border: 1px solid #a0bec8;
   border-radius: 10px;
 }
 
@@ -117,6 +116,8 @@ form {
 @media (min-width: 900px) {
   .sidebar {
     height: fit-content;
+    margin-top: 0;
+    border: 1px solid #a0bec8;
   }
 }
 </style>

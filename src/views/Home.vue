@@ -37,16 +37,17 @@ ul {
   padding: 0;
 }
 
-.container {
-  width: calc(100% - 32px);
+.main-home-container {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 @media (min-width: 900px) {
   .main-home-container {
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr 300px;
     grid-gap: 16px;
   }
