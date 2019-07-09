@@ -10,9 +10,7 @@
       <div class="speachIcon__votes">{{ speach.votos }} votos</div>
     </div>
     <div class="speachImg">
-      <div class="speachImg__box">
-        <img :src="speach.imgUrl" width="115" height="115" alt>
-      </div>
+      <img :src="speach.imgUrl" width="115" height="115" alt>
     </div>
     <div class="charlaMeta">
       <div class="charlaMeta__title">{{ speach.titulo }}</div>
@@ -36,10 +34,18 @@ export default {
   margin: 5px;
   box-sizing: border-box;
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 5px;
   width: 100%;
   max-width: 850px;
   height: 140px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 120px 1fr 40px;
+  grid-column-gap: 5px;
+  grid-template-areas: 
+    "image meta meta"
+    "image meta meta"
+    "image votes votes"
 }
 
 .charlaBox:hover {
@@ -48,43 +54,44 @@ export default {
 }
 
 .speachIcon {
-  width: 12%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  grid-area: votes;
+}
+
+.speachIcon i {
+  font-size: 24px;
+  padding: 4px;
 }
 
 .speachIcon__votes {
   color: #a0bec8;
+  font-size: 12px;
 }
 
 .speachImg {
-  width: 14%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  grid-area: image;
 }
 
-.speachImg__box {
-  /* border-radius: 10px; */
-  /* border: 0.5px solid #00a7e1; */
-  height: 100px;
-  width: 115px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.speachImg img {
+  flex-shrink: 0;
 }
 
 .charlaMeta {
-  margin-top: 34px;
-  margin-left: 27px;
+  grid-area: meta;
 }
 
 .charlaMeta__title {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #00a7e1;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .charlaMeta__author {
