@@ -119,7 +119,6 @@ form {
     height: fit-content;
     margin-top: 0;
     margin-top: 0;
-    border: 1px solid #a0bec8;
   }
 }
 </style>
