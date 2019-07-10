@@ -12,9 +12,9 @@
     <div class="speachImg">
       <img :src="speach.imgUrl" width="115" height="115" alt>
     </div>
-    <div class="charlaMeta">
-      <div class="charlaMeta__title">{{ speach.titulo }}</div>
-      <div class="charlaMeta__author">{{ speach.usuario }} - {{ speach.fecha_publicacion}}</div>
+    <div class="speachMeta">
+      <div class="speachMeta__title">{{ speach.titulo }}</div>
+      <div class="speachMeta__author">{{ speach.usuario }} - {{ speach.fecha_publicacion}}</div>
     </div>
   </div>
 </template>
@@ -81,11 +81,11 @@ export default {
   flex-shrink: 0;
 }
 
-.charlaMeta {
+.speachMeta {
   grid-area: meta;
 }
 
-.charlaMeta__title {
+.speachMeta__title {
   font-size: 18px;
   font-weight: 900;
   color: #00a7e1;
@@ -93,7 +93,7 @@ export default {
   line-height: 1.2;
 }
 
-.charlaMeta__author {
+.speachMeta__author {
   font-size: 14px;
   color: #4d646d;
 }
@@ -102,5 +102,21 @@ export default {
   color: #00a7e1;
 }
 
+@media screen and (min-width: 900px) {
+  .speachMeta__title {
+    font-size: 20px;
+  }
 
+  .speachMeta__author {
+    font-size: 16px;
+  }
+
+  .speachIcon i {
+    font-size: 28px;
+  }
+
+  .speachIcon__votes {
+    font-size: 14px;
+  }
+}
 </style>
