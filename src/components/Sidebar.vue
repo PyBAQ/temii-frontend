@@ -82,6 +82,7 @@ export default {
   margin: 15px auto;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-content {
@@ -117,7 +118,6 @@ form {
   .sidebar {
     height: fit-content;
     margin-top: 0;
-    border: 1px solid #a0bec8;
   }
 }
 </style>
