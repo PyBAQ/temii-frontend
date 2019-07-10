@@ -44,11 +44,12 @@ export default {
   grid-template-areas: 
     "image meta meta"
     "image meta meta"
-    "image votes votes"
+    "image votes votes";
+  transition: 300ms ease;
 }
 
-.charlaBox:hover {
-  border: 0.5px solid #00a7e1;
+.speachBox:hover {
+  box-shadow: 8px 8px 25px 5px rgba(0,0,0,0.25);
   cursor: pointer;
 }
 

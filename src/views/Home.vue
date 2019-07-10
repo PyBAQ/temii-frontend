@@ -42,7 +42,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px 30px 10px;
 }
 
 @media (min-width: 900px) {
