@@ -32,7 +32,7 @@
 }
 
 .charlaDetailContent {
-  margin: 5px 5px 5px 130px;
+  margin: 5px 5px 5px 140px;
   box-sizing: border-box;
   border-radius: 10px;
   width: 595px;
