@@ -1,11 +1,16 @@
 <template>
-  <input type="text" :value="value" @input="$emit('input', $event.target.value)">
+  <input
+    :placeholder="placeholder"
+    type="text"
+    :value="value"
+    @input="$emit('input', $event.target.value)"
+  />
 </template>
 
 <script>
 export default {
   name: 'BaseInput',
-  props: ['value']
+  props: ['value', 'placeholder']
 }
 </script>
 <style scoped>
