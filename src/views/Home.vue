@@ -1,8 +1,8 @@
 <template>
   <div>
     <Header/>
-    <div class="container">
-      <Charlas/>
+    <div class="container main-home-container">
+      <SpeachList/>
       <Sidebar/>
     </div>
   </div>
@@ -10,14 +10,14 @@
 
 <script>
 // @ is an alias to /src
-import Charlas from '@/components/Charlas.vue'
+import SpeachList from '@/components/SpeachList.vue'
 import Header from '@/components/Header.vue'
 import Sidebar from '@/components/Sidebar.vue'
 
 export default {
   name: 'home',
   components: {
-    Charlas,
+    SpeachList,
     Header,
     Sidebar
   }
@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style>
-/* remove default margin */
 body {
   margin: 0px;
   line-height: 1.6;
@@ -38,10 +37,27 @@ ul {
   padding: 0;
 }
 
-.container {
-  margin: 15px 150px 15px 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.main-home-container {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 0 10px 30px 10px;
+}
+
+@media (min-width: 900px) {
+  .main-home-container {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-gap: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-home-container {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-gap: 16px;
+  }
 }
 </style>
