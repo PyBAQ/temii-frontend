@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <div class="container">
-      <Charlas/>
-      <Sidebar/>
+      <Charlas />
+      <Sidebar />
     </div>
   </div>
 </template>

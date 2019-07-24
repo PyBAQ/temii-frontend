@@ -13,11 +13,13 @@
         </div>
         <div class="charlaImg">
           <div class="charlaImg__box">
-            <img :src="charla.imgUrl" width="115" height="115" alt>
+            <img :src="charla.imgUrl" width="115" height="115" alt />
           </div>
         </div>
         <div class="charlaMeta">
-          <div class="charlaMeta__title">{{ charla.titulo }}</div>
+          <div class="charlaMeta__title">
+            <router-link :to="{ name: 'detail', params: { id: charla.id}}">{{ charla.titulo }}</router-link>
+          </div>
           <div class="charlaMeta__author">{{ charla.usuario }} - {{ charla.fecha_publicacion}}</div>
         </div>
       </div>
@@ -38,7 +40,8 @@ export default {
           usuario: 'Rafael Villareal',
           votos: '20',
           imgUrl: 'https://imgur.com/veyASfn.png',
-          upvoted: false
+          upvoted: false,
+          id: 0
         },
         {
           titulo: 'Big Data y Cloud Computing',
@@ -46,7 +49,8 @@ export default {
           usuario: 'Rafael Villareal',
           votos: '20',
           imgUrl: 'https://imgur.com/o96FbDB.png',
-          upvoted: false
+          upvoted: false,
+          id: 1
         },
         {
           titulo: 'Docker-py',
@@ -54,7 +58,8 @@ export default {
           usuario: 'Rafael Villareal',
           votos: '20',
           imgUrl: 'https://imgur.com/819GxJm.png',
-          upvoted: false
+          upvoted: false,
+          id: 2
         },
         {
           titulo: 'Pasarela de Pagos',
@@ -62,7 +67,8 @@ export default {
           usuario: 'Rafael Villareal',
           votos: '20',
           imgUrl: 'https://imgur.com/u9iSLfM.png',
-          upvoted: false
+          upvoted: false,
+          id: 3
         },
         {
           titulo: 'Como usar GraphQL con Django y Flask',
@@ -70,7 +76,8 @@ export default {
           usuario: 'Rafael Villareal',
           votos: '20',
           imgUrl: 'https://imgur.com/40lBxyW.png',
-          upvoted: false
+          upvoted: false,
+          id: 4
         }
       ]
     }

@@ -3,12 +3,14 @@
     <div class="charlaDetailBox">
       <div class="charlaDetailImg">
         <div class="charlaDetailImg__box">
-          <img src="https://imgur.com/veyASfn.png" width="115" height="115" alt />
+          <img :src="testData[$route.params.id].imgUrl" width="115" height="115" alt />
         </div>
       </div>
       <div class="charlaDetailMeta">
-        <div class="charlaDetailMeta__title">Pentesting con Python</div>
-        <div class="charlaDetailMeta__author">Rafael Villarreal - 27/03/2018</div>
+        <div class="charlaDetailMeta__title">{{ testData[$route.params.id].titulo }}</div>
+        <div
+          class="charlaDetailMeta__author"
+        >{{ testData[$route.params.id].usuario }} -{{ testData[$route.params.id].fecha_publicacion }}</div>
         <div class="charlaDetailMeta__tags">
           <div class="tag">python</div>
           <div class="tag">linux</div>
@@ -20,6 +22,62 @@
     >Muchas de las herramientas que se usan para pruebas de penetración en diferentes entornos están hechas con python. La idea es tomar alguna función pequeña de estas herramientas y recrearla con python.</div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      testData: [
+        {
+          titulo: 'Pentesting con Python',
+          fecha_publicacion: '27/03/2019',
+          usuario: 'Rafael Villareal',
+          votos: '20',
+          imgUrl: 'https://imgur.com/veyASfn.png',
+          upvoted: false,
+          tags: ['python', 'linux']
+        },
+        {
+          titulo: 'Big Data y Cloud Computing',
+          fecha_publicacion: '27/03/2019',
+          usuario: 'Rafael Villareal',
+          votos: '20',
+          imgUrl: 'https://imgur.com/o96FbDB.png',
+          upvoted: false,
+          tags: ['python', 'big-data']
+        },
+        {
+          titulo: 'Docker-py',
+          fecha_publicacion: '27/03/2019',
+          usuario: 'Rafael Villareal',
+          votos: '20',
+          imgUrl: 'https://imgur.com/819GxJm.png',
+          upvoted: false,
+          tags: ['python', 'docker']
+        },
+        {
+          titulo: 'Pasarela de Pagos',
+          fecha_publicacion: '27/03/2019',
+          usuario: 'Rafael Villareal',
+          votos: '20',
+          imgUrl: 'https://imgur.com/u9iSLfM.png',
+          upvoted: false,
+          tags: ['python']
+        },
+        {
+          titulo: 'Como usar GraphQL con Django y Flask',
+          fecha_publicacion: '27/03/2019',
+          usuario: 'Rafael Villareal',
+          votos: '20',
+          imgUrl: 'https://imgur.com/40lBxyW.png',
+          upvoted: false,
+          tags: ['python', 'flask', 'django']
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style>
 .charlaDetailBox {
