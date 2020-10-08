@@ -1,31 +1,34 @@
 <template>
-  <div class="speachBox">  
+  <div class="speachBox">
     <div class="speachIcon">
       <i
         v-if="speach.upvoted"
         @click="speach.upvoted = !speach.upvoted"
         class="fas fa-heart fa-2x"
       ></i>
-      <i v-else @click="speach.upvoted = !speach.upvoted" class="far fa-heart fa-2x"></i>
+      <i
+        v-else
+        @click="speach.upvoted = !speach.upvoted"
+        class="far fa-heart fa-2x"
+      ></i>
       <div class="speachIcon__votes">{{ speach.votos }} votos</div>
     </div>
     <div class="speachImg">
-      <img :src="speach.imgUrl" width="115" height="115" alt>
+      <img :src="speach.imgUrl" width="115" height="115" alt />
     </div>
     <div class="speachMeta">
       <div class="speachMeta__title">{{ speach.titulo }}</div>
-      <div class="speachMeta__author">{{ speach.usuario }} - {{ speach.fecha_publicacion}}</div>
+      <div class="speachMeta__author">
+        {{ speach.usuario }} - {{ speach.fecha_publicacion }}
+      </div>
     </div>
   </div>
 </template>
 
-
 <script>
 export default {
   name: 'SingleSpeachCard',
-  props: [
-    'speach'
-  ]
+  props: ['speach']
 }
 </script>
 
@@ -41,15 +44,15 @@ export default {
   display: grid;
   grid-template-columns: 120px 1fr 40px;
   grid-column-gap: 5px;
-  grid-template-areas: 
-    "image meta meta"
-    "image meta meta"
-    "image votes votes";
+  grid-template-areas:
+    'image meta meta'
+    'image meta meta'
+    'image votes votes';
   transition: 300ms ease;
 }
 
 .speachBox:hover {
-  box-shadow: 8px 8px 25px 5px rgba(0,0,0,0.25);
+  box-shadow: 8px 8px 25px 5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -106,7 +109,7 @@ export default {
   .speachIcon {
     justify-content: flex-start;
   }
-  
+
   .speachIcon__votes {
     margin-inline-end: 10px;
   }
