@@ -4,7 +4,7 @@
       <i class="fa fa-search icon"></i>
     </div>
     <div class="input-field">
-      <input type="text" placeholder="Buscar charlas en Temii" name="usrnm">
+      <input type="text" placeholder="Buscar charlas en Temii" name="usrnm" />
     </div>
   </div>
 </template>
@@ -14,7 +14,6 @@ export default {
   name: 'SearchInput'
 }
 </script>
-
 
 <style>
 .header__search {
